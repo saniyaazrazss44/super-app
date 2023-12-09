@@ -1,0 +1,91 @@
+.timer-main {
+    color: #000000;
+    height: 100%;
+}
+
+.timer {
+    background-color: #1E2343;
+    height: 100%;
+    border-style: none;
+    border-radius: 19px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.timer_circle {
+    background-color: #1E2343;
+}
+
+.timer_circle svg {
+    color: #ffffff;
+    background-color: #1E2343;
+    border-radius: 100%;
+}
+
+.timer_content {
+    background-color: transparent;
+    color: #ffffff;
+    display: flex;
+}
+
+.timer_content .hours_div,
+.minutes_div,
+.seconds_div {
+    background-color: #1E2343;
+    color: #ffffff;
+}
+
+.timer_content_main {
+    display: flex;
+    background-color: #1E2343;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer_content_main .btn_start {
+    background-color: #1E2343;
+}
+
+.timer_content_main .btn_start button {
+    background-color: #FF6A6A;
+    padding: 0.7rem 5rem;
+    color: #ffffff;
+    border-style: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn_start button:hover {
+    background-color: #ff1414;
+}
+
+.hours_div,
+.minutes_div,
+.seconds_div {
+    background-color: #1E2343;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hours_div div,
+.minutes_div div,
+.seconds_div div {
+    background-color: transparent;
+}
+
+.hours_div_content,
+.minutes_div_content,
+.seconds_div_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

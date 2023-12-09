@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&family=Single+Day&display=swap');
+
+.grid-container {
+    color: #ffffff;
+}
+
+.super-title {
+    color: #72DB73;
+    font-family: 'Single Day', cursive;
+    font-size: 4.19rem;
+    font-weight: 400;
+    line-height: 5.88rem;
+    letter-spacing: 0em;
+}
+
+.choose-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+.min-three-error {
+    color: #FF0000;
+}
+
+.next-page {
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 38.86px;
+    border-style: none;
+    background-color: #148A08;
+    cursor: pointer;
+}
+
+.category-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.category {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-container div {
+    padding: 1rem;
+    border-radius: 8px;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-container h6 {
+    background-color: transparent;
+}
+
+.action-grid {
+    background-color: #FF5209;
+}
+
+.drama-grid {
+    background-color: #D7A4FF;
+}
+
+.romance-grid {
+    background-color: #148A08;
+}
+
+.thriller-grid {
+    background-color: #84C2FF;
+}
+
+.western-grid {
+    background-color: #902500;
+}
+
+.horror-grid {
+    background-color: #7358FF;
+}
+
+.fantasy-grid {
+    background-color: #FF4ADE;
+}
+
+.music-grid {
+    background-color: #E61E32;
+}
+
+.fiction-grid {
+    background-color: #6CD061;
+}
+
+.grid-container img {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.next {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* #chip-id {
+    color: #ffffff;
+    background-color: #148A08;
+    display: inline-block;
+    inline-size: 250px;
+    padding: 1rem;
+    gap: 1rem;
+} */
