@@ -4,7 +4,7 @@ import { fetchData } from '../apis/moviesapi'
 
 const Movies = () => {
 
-    const [movies, setMovies] = useState('Loading...')
+    const [movies, setMovies] = useState([])
 
     useEffect(() => {
         fetchMovies()
@@ -13,8 +13,15 @@ const Movies = () => {
     const fetchMovies = async () => {
         try {
             const movieList = await fetchData()
-            console.log(movieList)
-            setMovies(movieList)
+            const movieTitles = movieList.data.results.map(movie => (
+                <div key={movie.id} className="movie-item">
+                    <img
+                        src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                        alt={movie.title}
+                    />
+                </div>
+            ));
+            setMovies(movieTitles);
         } catch (error) {
             console.log(error)
         }
@@ -23,7 +30,7 @@ const Movies = () => {
     return (
         <div style={{ color: '#ffffff' }}>
             <div className='movies'>
-                {movies && movies.title ? movies.title : 'Loading...'}
+                {movies}
             </div>
         </div>
     )
